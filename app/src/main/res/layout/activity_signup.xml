@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uncc.mysocialapp.activities.SignupActivity"
+    android:background="@color/colorPrimary">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="58dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/constraintLayout3">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="58dp"
+            app:srcCompat="@drawable/ic_action_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Social App"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="21dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/signupFirstname"
+        android:layout_width="333dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/signupLogo"
+        android:layout_marginLeft="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageView
+        android:id="@+id/signupLogo"
+        android:layout_width="109dp"
+        android:layout_height="93dp"
+        app:srcCompat="@drawable/app_icon"
+        android:layout_marginLeft="126dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="27dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <EditText
+        android:id="@+id/signupLastname"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:layout_marginLeft="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/signupFirstname"/>
+
+    <EditText
+        android:id="@+id/signupEmail"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:layout_marginLeft="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/signupLastname" />
+
+    <EditText
+        android:id="@+id/signupDOB"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Date of Birth"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginLeft="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/signupEmail" />
+
+    <EditText
+        android:id="@+id/signupPassword"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/signupDOB" />
+
+    <EditText
+        android:id="@+id/signupRePassword"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Re-Enter Password"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/signupPassword"
+        android:layout_marginLeft="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/signupButtonSignup"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="#8b9dc3"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/signupRePassword"
+        android:layout_marginLeft="14dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>

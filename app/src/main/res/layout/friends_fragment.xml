@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <ListView
+        android:layout_width="355dp"
+        android:layout_height="491dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/friendsList"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="3dp" />
+
+    <TextView
+        android:id="@+id/emptyFriendsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Looks like you have\n no friends."
+        android:gravity="center"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="151dp"
+        android:layout_marginLeft="89dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/emptyFriendsButton"
+        android:layout_width="70dp"
+        android:padding="10dp"
+        android:elevation="18dp"
+        android:layout_height="62dp"
+        app:srcCompat="@drawable/add_new_friend"
+        android:fontFamily="sans-serif-condensed"
+        android:background="#8b9dc3"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Add Friends"
+        android:layout_marginTop="19dp"
+        app:layout_constraintTop_toBottomOf="@+id/emptyFriendsMessage"
+        android:layout_marginLeft="145dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uncc.mysocialapp.activities.MainActivity"
+    android:background="@color/colorPrimary">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="413dp"
+            android:layout_height="58dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:id="@+id/constraintLayout4">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="58dp"
+                app:srcCompat="@drawable/ic_action_name"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/imageView2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Social"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="21dp" />
+        </android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/loginLogo"
+        android:layout_width="159dp"
+        android:layout_height="137dp"
+        app:srcCompat="@drawable/app_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="105dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="105dp"
+        tools:layout_editor_absoluteX="147dp" />
+
+    <EditText
+        android:id="@+id/loginUsername"
+        android:layout_width="313dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:layout_marginTop="52dp"
+        app:layout_constraintTop_toBottomOf="@+id/loginLogo"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/loginUsername"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/loginButtonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:background="#40dfe3ee"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_marginTop="29dp"
+        app:layout_constraintTop_toBottomOf="@+id/loginPassword"
+        android:layout_marginLeft="136dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <com.google.android.gms.common.SignInButton
+        android:foregroundGravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#40dfe3ee"
+        android:layout_marginLeft="112dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/loginButtonLogin"
+        android:id="@+id/loginGoogleLogin"
+        android:layout_marginStart="112dp">
+
+
+    </com.google.android.gms.common.SignInButton>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not a member? "
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@+id/loginGoogleLogin"
+        android:layout_marginLeft="112dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/loginSignupLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:background="?attr/selectableItemBackground"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@+id/loginGoogleLogin"
+        android:layout_marginStart="1dp" />
+
+    <ProgressBar
+        android:id="@+id/loginLoader"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="3.5"
+        android:scaleY="3.5"
+        android:indeterminateTint="#dfe3ee"
+        android:indeterminateBehavior="cycle"
+        android:indeterminateDuration="600"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="162dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>

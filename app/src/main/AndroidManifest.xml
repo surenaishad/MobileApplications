@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.uncc.mysocialapp">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.SplashActivity" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan" android:name=".activities.MainActivity">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name=".activities.SignupActivity" />
+        <activity android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan" android:name=".activities.Home_Activity" />
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name=".activities.User_Wall" />
+        <activity android:theme="@style/AppTheme.NoActionBar"
+            android:name=".activities.Manage_Friends_Tabbed"
+            android:label="@string/title_activity_manage__friends__tabbed" />
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name=".activities.FriendPosts" />
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name=".activities.EditUserProfile"></activity>
+    </application>
+
+</manifest>

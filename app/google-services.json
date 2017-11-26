@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "179393664577",
+    "firebase_url": "https://homework7-af78d.firebaseio.com",
+    "project_id": "homework7-af78d",
+    "storage_bucket": "homework7-af78d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179393664577:android:39002e056cbb7cc0",
+        "android_client_info": {
+          "package_name": "edu.uncc.mysocialapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179393664577-9s0s4ghs5kcel5t3b2mnqgr45tfefsb4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.uncc.mysocialapp",
+            "certificate_hash": "05e005a9459bcbccee280349dacd41b7f2230cd3"
+          }
+        },
+        {
+          "client_id": "179393664577-ibp844keoj1fp10ol5n141pko1gc82gn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIOnVmKPdIRwD6YAR8doKVpxxiEUqHlY8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179393664577-ibp844keoj1fp10ol5n141pko1gc82gn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
